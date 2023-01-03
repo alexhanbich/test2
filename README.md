@@ -136,3 +136,37 @@ solution = r = 64
 | 5 | 2 | 0 | 18 | 8 |
 
 solution = z = 8
+
+## Homework Assignment #3
+### # 1.18
+- compute gcd(210, 588)
+- factorization
+	- factorize 210
+		- 1 * 210
+		- 2 * 105
+		- 3 * 70
+		- 5 * 42
+		- 6 * 35
+		- 7 * 30
+		- 10 * 21
+		- 14 * 15
+	- factorize 588
+		- 1 * 588
+		- 2 * 294
+		- 3 * 196
+		- 4 * 147
+		- 6 * 98
+		- 7 * 84
+		- 12 * 49
+		- 14 *42
+		- 21 *28
+	- the greatest common divisor is 42
+- euclid's algorithm
+```
+def  gcd(m,n): 
+	if m< n: 
+		(m,n) = (n,m) 
+	if(m%n) == 0: 
+		return n 
+	else: 
+		return (gcd(n, m % n))
